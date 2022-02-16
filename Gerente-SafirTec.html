@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Projeto SafirTec</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+	<header class="d-flex  justify-content-end border" >
+		<div class="d-flex align-items-center">
+			
+		    <img src="/users/user/desktop/Projeto-Claudia/icone.png" width="30" height="30" class="align-top" alt="">
+		    <h4 class="pl-4 pr-5">Gerente de projeto</h4>
+	
+		</div>
+	</header>
+
+	<main class="main">
+		
+		<div class="row m-0" style="height:85vh">
+  <div class="col- col-sm-12 col-md-12 col-lg-3 col-xl-3 row menu pt-2 border rounded-right ">
+    <div class="nav flex-column nav-pills itens-menu justify-content-around " id="v-pills-tab" role="tablist" aria-orientation="vertical">
+      
+      <a class="nav-link border-bottom " id="v-pills-projetos-tab" data-toggle="pill" href="#v-pills-projetos" role="tab" aria-controls="v-pills-projetos" aria-selected="true">Projetos</a>
+
+      <a class="nav-link border-bottom" id="v-pills-colabs-tab" data-toggle="pill" href="#v-pills-colabs" role="tab" aria-controls="v-pills-colabs" aria-selected="false">Colaboradores</a>
+
+      <a class="nav-link border-bottom" id="v-pills-times-tab" data-toggle="pill" href="#v-pills-times" role="tab" aria-controls="v-pills-times" aria-selected="false">Times</a>
+
+      <a class="nav-link border-bottom" id="v-pills-tarefas-tab" data-toggle="pill" href="#v-pills-tarefas" role="tab" aria-controls="
+      v-pills-tarefas" aria-selected="false">Tarefas</a>
+
+      <a class="nav-link border-bottom" id="v-pills-fases-tab" data-toggle="pill" href="#v-pills-fases" role="tab" aria-controls="v-pills-fases" aria-selected="false">Fases</a>
+
+      <a class="nav-link border-bottom" id="v-pills-custos-tab" data-toggle="pill" href="#v-pills-custos" role="tab" aria-controls="v-pills-custos" aria-selected="false">Custos</a>
+
+      <a class="nav-link border-bottom" id="v-pills-riscos-tab" data-toggle="pill" href="#v-pills-riscos" role="tab" aria-controls="v-pills-riscos" aria-selected="false">Riscos</a>
+
+      <a class="nav-link border-bottom" id="v-pills-relatorios-tab" data-toggle="pill" href="#v-pills-relatorios" role="tab" aria-controls="v-pills-relatorios" aria-selected="false">Relatórios</a>
+
+    </div>
+  </div>
+  <div class="col- col-sm-12 col-md-12 col-lg-9 col-xl-9 conteudo">
+    <div class="tab-content" id="v-pills-tabContent" style="height: 100%;">
+
+      <div class="tab-pane fade show " id="v-pills-projetos" role="tabpanel" aria-labelledby="v-pills-projetos-tab" style="height: 100%">
+
+      	<h2>Projetos</h2>
+
+      	<ul class="list-group">
+		  <li class="list-group-item">Projeto 1</li>
+		  <li class="list-group-item">Projeto 2</li>
+		  <li class="list-group-item">Projeto 3</li>
+		  <li class="list-group-item">Projeto 4</li>
+		  <li class="list-group-item">Projeto 5</li>
+		</ul>
+
+		<!-- Botão para acionar modal -->
+		<button type="button" class="btn btn-primary mt-5" data-toggle="modal" data-target="#ExemploModalCentralizado">
+		  Cadastrar novo projeto
+		</button>
+
+		<!-- Modal -->
+		<div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			 <div class="modal-content">
+				  <div class="modal-header">
+				    <h5 class="modal-title" id="TituloModalCentralizado">Cadastro</h5>
+				    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+				      <span aria-hidden="true">&times;</span>
+				    </button>
+				  </div>
+			  <div class="modal-body">
+			    <form>
+			    	<div class="form-group">
+					    <label for="formGroupExampleInput2">Nome</label>
+					    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Nome do projeto">
+					  </div>			  
+					  
+					  <div class="form-group">
+					    <label for="formGroupExampleInput2">Responsável</label>
+					    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Nome do responsável">
+					  </div>
+					 
+					  <div class="form-group">
+					    <label for="formGroupExampleInput2">Time</label>
+					    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Time do projeto">
+					  </div>
+					  
+					  <div class="form-group">
+					    <label for="formGroupExampleInput2">Descrição</label>
+					    <textarea class="form-control" aria-label="Com textarea" placeholder="Descrição do projeto"></textarea>
+					  </div>
+
+					  <div class="row">
+					    <div class="col">
+					    	<label for="formGroupExampleInput2">Data início</label>
+					      <input type="date" class="form-control" placeholder="dd/mm/aa">
+					    </div>
+					    
+					    <div class="col">
+					    	<label for="formGroupExampleInput2">Data término</label>
+					      <input type="date" class="form-control" placeholder="dd/mm/aa">
+					    </div>
+					  </div>
+					  
+					</form>
+			  </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+			        <button type="button" class="btn btn-primary" onclick="alert('Confirmar a inclusão do projeto ?')">Salvar</button>
+
+			      </div>
+			    </div>
+			</div>
+		</div>
+
+      </div>
+
+      <div class="tab-pane fade" id="v-pills-colabs" role="tabpanel" aria-labelledby="v-pills-colabs-tab">Colaboradores</div>
+
+      <div class="tab-pane fade" id="v-pills-times" role="tabpanel" aria-labelledby="v-pills-times-tab">Times</div>
+
+      <div class="tab-pane fade" id="v-pills-tarefas" role="tabpanel" aria-labelledby="v-pills-tarefas-tab">Tarefas</div>
+
+      <div class="tab-pane fade" id="v-pills-fases" role="tabpanel" aria-labelledby="v-pills-fases-tab">Fases</div>
+
+      <div class="tab-pane fade" id="v-pills-custos" role="tabpanel" aria-labelledby="v-pills-custos-tab">Custos</div>
+
+      <div class="tab-pane fade" id="v-pills-riscos" role="tabpanel" aria-labelledby="v-pills-riscos-tab">Riscos</div>
+
+      <div class="tab-pane fade" id="v-pills-relatorios" role="tabpanel" aria-labelledby="v-pills-relatorios-tab">Relatórios</div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+	</main>
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+
+
+</html>
