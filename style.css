@@ -1,0 +1,56 @@
+html body {
+	background-color: #0aa8d717;
+}
+
+
+header {
+	height: 15vh;
+
+}
+
+.menu {
+	justify-content: space-around;
+	margin: 0;
+	padding: 0;
+	background-color: floralwhite; 
+}  
+
+.itens-menu {
+	
+	width: 80%;
+}
+
+.conteudo {
+	padding: 5vh;
+}
+
+.tab-content> .active {
+	display: flex;
+	flex-direction: column;
+}
+
+
+.bg-orange {
+	background-color: orange;
+}
+
+/* Color Theme Swatches in Hex */
+.blue-chaton-1-hex { color: #0477BF; }
+.blue-chaton-2-hex { color: #048ABF; }
+.blue-chaton-3-hex {background-color: #05DBF2; }
+.blue-chaton-4-hex { color: #05F2F2; }
+.blue-chaton-5-hex { color: #05F2DB; }
+
+/* Color Theme Swatches in RGBA */
+.blue-chaton-1-rgba { color: rgba(3, 119, 191, 1); }
+.blue-chaton-2-rgba { color: rgba(3, 138, 191, 1); }
+.blue-chaton-3-rgba { color: rgba(4, 218, 242, 1); }
+.blue-chaton-4-rgba { color: rgba(4, 242, 242, 1); }
+.blue-chaton-5-rgba { color: rgba(4, 242, 218, 1); }
+
+/* Color Theme Swatches in HSLA */
+.blue-chaton-1-hsla { color: hsla(202, 96, 38, 1); }
+.blue-chaton-2-hsla { color: hsla(196, 96, 38, 1); }
+.blue-chaton-3-hsla { color: hsla(185, 96, 48, 1); }
+.blue-chaton-4-hsla { color: hsla(180, 96, 48, 1); }
+.blue-chaton-5-hsla { color: hsla(174, 96, 48, 1); }
