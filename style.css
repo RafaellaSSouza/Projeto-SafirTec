@@ -29,6 +29,10 @@ header {
 	flex-direction: column;
 }
 
+li {
+	cursor: pointer;
+}
+
 
 .bg-orange {background-color: #ffa500c9;}
 
