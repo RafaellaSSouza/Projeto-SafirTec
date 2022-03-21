@@ -1,0 +1,40 @@
+.container-main {
+  width: 100%; 
+  height: 100vh; 
+  background-color: #007bff85;
+}
+
+.box-container {
+  width: 60vw; 
+  height: 55vh;
+}
+
+.title-login {
+  position: relative;
+  font-size: 24px;
+  font-weight: 500;
+  color: #333;
+  border-bottom: 3px solid #007bff;
+  width: 25px;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  margin: 10px 0;
+  position: relative;
+}
+
+.input-form {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 0 30px;
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 2px solid #007bff;
+  transition: all 0.3s ease;
+}
