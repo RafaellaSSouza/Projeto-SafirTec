@@ -3,12 +3,12 @@
 
 	<head>
 		<meta charset="utf-8">
-		<title>Perfil Gerente SafirTec</title>
+		<title>Perfil Gerente | SafirTec</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1.">
 
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 	</head>
 
 	<body>
@@ -25,7 +25,7 @@
 	       	 		<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 	         			<a class="dropdown-item" href="#">Perfil</a>
 	         			<a class="dropdown-item" href="#">Configurações</a>
-	         			<a class="dropdown-item" href="index.html">Sair</a>
+	         			<a class="dropdown-item" href="home.html">Sair</a>
 	       			</div>
 				</div>
 			</div>
@@ -152,7 +152,175 @@
 						<div class="tab-pane fade" id="v-pills-fases" role="tabpanel" aria-labelledby="v-pills-fases-tab">Fases</div>
 						<div class="tab-pane fade" id="v-pills-custos" role="tabpanel" aria-labelledby="v-pills-custos-tab">Custos</div>
 						<div class="tab-pane fade" id="v-pills-riscos" role="tabpanel" aria-labelledby="v-pills-riscos-tab">Riscos</div>
-						<div class="tab-pane fade" id="v-pills-relatorios" role="tabpanel" aria-labelledby="v-pills-relatorios-tab">Relatórios</div>
+						<div class="tab-pane fade" id="v-pills-relatorios" role="tabpanel" aria-labelledby="v-pills-relatorios-tab">
+
+							<div class="container">
+								<h2>Relatórios</h2>
+								<div class="bg-white mb-3 rounded border d-flex align-items-center row"
+								style="height: 75px; width: 100%; margin-left: 0px">
+									<div class="d-flex row mx-3">
+										<div class="d-flex flex-wrap text-center">
+											<label class="d-flex align-items-center">Projeto:</label>
+											<input type="text" placeholder="Buscar Projeto" class="ml-1 mr-3 h-3" style="height:35px">
+										</div>
+										<div class="mx-3 d-flex">
+											<label class="d-flex align-items-center mr-1">Status:</label>
+											<select class="form-control" style="height:35px">
+												<option>Selecionar</option>
+												<option>No Prazo</option>
+												<option>Com Risco</option>
+												<option>Atrasado</option>
+											</select>
+										</div>
+										<div class="mx-3">
+											<label>De:</label>
+											<input id="date" type="date" style="height:35px">
+										</div>
+										<div class="mx-3">
+											<label>Até:</label>
+											<input id="date" type="date" style="height:35px">
+										</div>
+									</div>
+								</div>
+								<ul class="list-group">
+									<li class="list-group-item d-flex justify-content-between align-items-center">
+										<span>Projeto 1</span>
+										<span class="text-white bg-success p-1 rounded text-center" style="width: 85px">No Prazo</span>
+									</li>
+									<li class="list-group-item d-flex justify-content-between align-items-center">
+										<span>Projeto 2</span>
+										<span class="text-white bg-warning p-1 rounded text-center" style="width: 85px">Com Risco</span>
+									</li>
+									<li class="list-group-item d-flex justify-content-between align-items-center">
+										<span>Projeto 3</span>
+										<span class="text-white bg-danger p-1 rounded text-center" style="width: 85px">Atrasado</span>
+									</li>
+									<li class="list-group-item d-flex justify-content-between align-items-center">
+										<span>Projeto 4</span>
+										<span class="text-white bg-danger p-1 rounded text-center" style="width: 85px">Atrasado</span>
+									</li>
+									<li data-toggle="modal" data-target=".bd-example-modal-lg"
+										class="list-group-item d-flex justify-content-between align-items-center">
+										<span>Projeto 5</span>
+										<span class="text-white bg-success p-1 rounded text-center" style="width: 85px">No Prazo</span>
+									</li>
+								</ul>
+
+
+								<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+									aria-labelledby="myLargeModalLabel" aria-hidden="true">
+									<div class="modal-dialog modal-lg">
+										<div class="modal-content p-3 d-flex justify-content-between">
+
+											<div class="">
+												<div class="d-flex justify-content-between border-bottom">
+													<h1>Projeto 5</h1>
+												</div>
+
+												<div class="d-flex justify-content-between border p-1 mb-2">
+
+													<div class="flex-fill">
+														<h6 class="font-weight-bold">Responsável:</h6>
+														<p>Rubens Alves Castro</p>
+														<h6 class="font-weight-bold">Data Prevista:</h6>
+														<p>16/12/2021</p>
+														<h6 class="font-weight-bold">Time:</h6>
+														<p>Delta</p>
+													</div>
+
+													<div class="flex-fill">
+														<h6 class="font-weight-bold">Total de Tarefas do Projeto:</h6>
+														<p>10</p>
+														<h6 class="font-weight-bold">A Fazer:</h6>
+														<p>3</p>
+														<h6 class="font-weight-bold">Em Andamento:</h6>
+														<p>2</p>
+													</div>
+													<div class="flex-fill">
+														<h6 class="font-weight-bold">Impedimento:</h6>
+														<p>1</p>
+														<h6 class="font-weight-bold">Atrasados:</h6>
+														<p>0</p>
+														<h6 class="font-weight-bold">Finalizados:</h6>
+														<p>4</p>
+													</div>
+												</div>
+											</div>
+											<div>
+												<table class="table">
+													<thead class="thead-light">
+														<tr class="text-center">
+															<th scope="col">A Fazer</th>
+															<th scope="col">Em Andamento</th>
+															<th scope="col">Impedimento</th>
+															<th scope="col">Concluído</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr class="text-center">
+															<td class="border bg-light text-center rounded">
+																<p>Tarefa 8</p>
+																<span class="font-weight-bold">Data: dd/mm/aa</span>
+															</td>
+															<td class="border bg-light text-center rounded">
+																<p>Tarefa 7</p>
+																<span class="font-weight-bold">Data: dd/mm/aa</span>
+															</td>
+															<td class="border bg-light text-center rounded">
+																<p>Tarefa 6</p>
+																<span class="font-weight-bold">Data: dd/mm/aa</span>
+															</td>
+															<td class="border bg-light text-center rounded">
+																<p>Tarefa 1</p>
+																<span class="font-weight-bold">Data 04/01/22</span>
+															</td>
+														</tr>
+														<tr>
+															<td class="border bg-light text-center rounded">
+																<p>Tarefa 9</p>
+																<span class="font-weight-bold">Data: dd/mm/aa</span>
+															</td>
+															<td class="border bg-light text-center rounded">
+																<p>Tarefa 5</p>
+																<span class="font-weight-bold">Data: dd/mm/aa</span>
+															</td>
+															<td class="border-0"></td>
+															<td class="border bg-light text-center rounded">
+																<p>Tarefa 2</p>
+																<span class="font-weight-bold">Data: dd/mm/aa</span>
+															</td>
+														</tr>
+
+														<tr>
+															<td class="border bg-light text-center rounded">
+																<p>Tarefa 10</p>
+																<span class="font-weight-bold">Data: dd/mm/aa</span>
+															</td>
+															<td class="border-0"></td>
+															<td class="border-0"></td>
+															<td class="border bg-light text-center rounded">
+																<p>Tarefa 3</p>
+																<span class="font-weight-bold">Data: dd/mm/aa</span>
+															</td>
+														</tr>
+
+														<tr>
+															<td class="border-0"></td>
+															<td class="border-0"></td>
+															<td class="border-0"></td>
+															<td class="border bg-light text-center rounded">
+																<p>Tarefa 4</p>
+																<span class="font-weight-bold">Data: dd/mm/aa</span>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
