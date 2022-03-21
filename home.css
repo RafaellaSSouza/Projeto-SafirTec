@@ -38,3 +38,16 @@
   border-bottom: 2px solid #007bff;
   transition: all 0.3s ease;
 }
+
+.tamanho {
+  height: 50vh;
+}
+
+@media(max-width: 1400px) {
+   .tamanho { 
+    height: 64vh;
+  }
+  .mt-4 {
+    margin-top: 0 !important;
+  }
+}
